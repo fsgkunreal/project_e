@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class project_eEditorTarget : TargetRules
+public class SqueakEditorTarget : TargetRules
 {
-	public project_eEditorTarget(TargetInfo Target) : base(Target)
+	public SqueakEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 
-		ExtraModuleNames.AddRange( new string[] { "project_e" } );
+		ExtraModuleNames.AddRange( new string[] { "Squeak" } );
 	}
 }

@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class project_e : ModuleRules
+public class Squeak : ModuleRules
 {
-	public project_e(ReadOnlyTargetRules Target) : base(Target)
+	public Squeak(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
