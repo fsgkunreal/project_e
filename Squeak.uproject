@@ -46,6 +46,10 @@
 		{
 			"Name": "ScriptableToolsEditorMode",
 			"Enabled": true
+		},
+		{
+			"Name": "GPULightmass",
+			"Enabled": true
 		}
 	]
 }
