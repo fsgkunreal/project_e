@@ -1,0 +1,1981 @@
+Running AutomationTool...
+Using bundled DotNet SDK version: 8.0.300 win-x64
+Starting AutomationTool...
+Parsing command line: -ScriptsForProject=D:/UnrealEngine/Projects/Squeak/Squeak.uproject BuildCookRun -project=D:/UnrealEngine/Projects/Squeak/Squeak.uproject -noP4 -clientconfig=Shipping -serverconfig=Shipping -nocompile -nocompileeditor -installed -unrealexe=D:\UnrealEngine\UE_5.6\Engine\Binaries\Win64\UnrealEditor-Cmd.exe -utf8output -platform=Win64 -build -cook -map=Level_2+Level_2 -CookCultures=en -unversionedcookedcontent -stage -package -cmdline="Level_2 -Messaging" -addcmdline="-SessionId=177C87D64680B4AC596FB09A5B1C7EDB -SessionOwner='Feyokon' -SessionName='New Profile 0'   "
+Initializing script modules...
+Total script module initialization time: 0.24 s.
+Using D:\Program Files\Microsoft Visual Studio\Community\MSBuild\Current\Bin\MSBuild.exe
+Executing commands...
+Setting up ProjectParams for D:\UnrealEngine\Projects\Squeak\Squeak.uproject
+********** BUILD COMMAND STARTED **********
+Running: D:\UnrealEngine\UE_5.6\Engine\Binaries\ThirdParty\DotNet\8.0.300\win-x64\dotnet.exe "D:\UnrealEngine\UE_5.6\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" Squeak Win64 Shipping -Project=D:\UnrealEngine\Projects\Squeak\Squeak.uproject -Manifest=D:\UnrealEngine\Projects\Squeak\Intermediate\Build\Manifest.xml  -remoteini="D:\UnrealEngine\Projects\Squeak"  -skipdeploy  -log="C:\Users\Feyokon\AppData\Roaming\Unreal Engine\AutomationTool\Logs\D+UnrealEngine+UE_5.6\UBA-Squeak-Win64-Shipping.txt"
+Log file: C:\Users\Feyokon\AppData\Roaming\Unreal Engine\AutomationTool\Logs\D+UnrealEngine+UE_5.6\UBA-Squeak-Win64-Shipping.txt
+Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealEngine\Projects\Squeak).
+Creating makefile for Squeak (.uproject file is newer)
+Available x64 toolchains (1):
+ * D:\Program Files\Microsoft Visual Studio\Community\VC\Tools\MSVC\14.51.36231
+    (Family=14.51.36231, FamilyRank=1, Version=14.51.36248, HostArchitecture=x64, ReleaseChannel=Latest, Architecture=x64)
+Visual Studio 2022 compiler version 14.51.36248 is not a preferred version. Please use the latest preferred version 14.38.33130
+NGX Using Lib Dir x64 Platform Dir Win64
+Writing manifest to D:\UnrealEngine\Projects\Squeak\Intermediate\Build\Manifest.xml
+Building Squeak...
+Using Visual Studio 2022 14.51.36248 toolchain (D:\Program Files\Microsoft Visual Studio\Community\VC\Tools\MSVC\14.51.36231) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Warning: Visual Studio 2022 compiler is not a preferred version
+[Upgrade]
+[Upgrade] Using backward-compatible include order. The latest version of UE has changed the order of includes, which may require code changes. The current setting is:
+[Upgrade]     IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_3
+[Upgrade] Suppress this message by setting 'IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_6;' in Squeak.Target.cs.
+[Upgrade] Alternatively you can set this to 'EngineIncludeOrderVersion.Latest' to always use the latest include order. This will potentially cause compile errors when integrating new versions of the engine.
+[Upgrade]
+Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
+  Executing up to 6 processes, one per physical core
+Using Unreal Build Accelerator local executor to run 2 action(s)
+  Storage capacity 40Gb
+---- Starting trace: 260713_011219 ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+------ Building 2 action(s) started ------
+[1/2] Link [x64] Squeak-Win64-Shipping.exe
+   ????????? ???????? D:\UnrealEngine\Projects\Squeak\Binaries\Win64\Squeak-Win64-Shipping.lib ? ???? D:\UnrealEngine\Projects\Squeak\Binaries\Win64\Squeak-Win64-Shipping.exp
+[2/2] WriteMetadata Squeak-Win64-Shipping.target (UBA disabled)
+Trace written to file C:/Users/Feyokon/AppData/Roaming/Unreal Engine/AutomationTool/Logs/D+UnrealEngine+UE_5.6/UBA-Squeak-Win64-Shipping.uba with size 5.9kb
+Total time in Unreal Build Accelerator local executor: 40.06 seconds
+
+Result: Succeeded
+Total execution time: 46.26 seconds
+Took 46,36s to run dotnet.exe, ExitCode=0
+Build command time: 46.38 s
+********** BUILD COMMAND COMPLETED **********
+********** COOK COMMAND STARTED **********
+HasMapsToCook Level_2+Level_2
+Params.HasMapsToCook Level_2+Level_2
+Running UnrealEditor Cook for project D:\UnrealEngine\Projects\Squeak\Squeak.uproject
+Commandlet log file is D:\UnrealEngine\UE_5.6\Engine\Programs\AutomationTool\Saved\Cook-2026.07.13-01.12.59.txt
+Running: D:\UnrealEngine\UE_5.6\Engine\Binaries\Win64\UnrealEditor-Cmd.exe "D:\UnrealEngine\Projects\Squeak\Squeak.uproject" -run=Cook -Map=Level_2+Level_2 -CookCultures=en -TargetPlatform=Windows  -unversioned -fileopenlog -abslog="D:\UnrealEngine\UE_5.6\Engine\Programs\AutomationTool\Saved\Cook-2026.07.13-01.12.59.txt" -stdout -CrashForUAT -unattended -NoLogTimes
+LogInit: Display: Running engine for game: Squeak
+LogCore: Display: Requested channels: 'cpu,gpu,frame,log,bookmark,screenshot,region'
+LogTrace: Display: Control listening on port 1985
+LogCsvProfiler: Display: Metadata set : platform="Windows"
+LogCsvProfiler: Display: Metadata set : config="Development"
+LogCsvProfiler: Display: Metadata set : buildversion="++UE5+Release-5.6-CL-44394996"
+LogCsvProfiler: Display: Metadata set : engineversion="5.6.1-44394996+++UE5+Release-5.6"
+LogCsvProfiler: Display: Metadata set : os="Windows 11 (25H2) [10.0.26200.8037] "
+LogCsvProfiler: Display: Metadata set : cpu="AuthenticAMD|AMD Ryzen 5 5600 6-Core Processor"
+LogCsvProfiler: Display: Metadata set : pgoenabled="0"
+LogCsvProfiler: Display: Metadata set : pgoprofilingenabled="0"
+LogCsvProfiler: Display: Metadata set : ltoenabled="0"
+LogCsvProfiler: Display: Metadata set : asan="0"
+LogCsvProfiler: Display: Metadata set : commandline="" D:\UnrealEngine\Projects\Squeak\Squeak.uproject -run=Cook -Map=Level_2+Level_2 -CookCultures=en -TargetPlatform=Windows -unversioned -fileopenlog -abslog=D:\UnrealEngine\UE_5.6\Engine\Programs\AutomationTool\Saved\Cook-2026.07.13-01.12.59.txt -stdout -CrashForUAT -unattended -NoLogTimes""
+LogCsvProfiler: Display: Metadata set : loginid="3a8c30af576a43f29d2026a1362a748f"
+LogCsvProfiler: Display: Metadata set : llm="0"
+LogPluginManager: Display: By default, prioritizing project plugin (D:/UnrealEngine/Projects/Squeak/Plugins/DLSS/DLSS.uplugin) over the corresponding engine version (../../../Engine/Plugins/Runtime/DLSS/DLSS/DLSS.uplugin).
+LogPluginManager: Display: By default, prioritizing project plugin (D:/UnrealEngine/Projects/Squeak/Plugins/DLSSMoviePipelineSupport/DLSSMoviePipelineSupport.uplugin) over the corresponding engine version (../../../Engine/Plugins/Runtime/DLSS/DLSSMoviePipelineSupport/DLSSMoviePipelineSupport.uplugin).
+LogPluginManager: Display: By default, prioritizing project plugin (D:/UnrealEngine/Projects/Squeak/Plugins/Streamline/Streamline.uplugin) over the corresponding engine version (../../../Engine/Plugins/Runtime/DLSS/Streamline/Streamline.uplugin).
+LogPluginManager: Display: By default, prioritizing project plugin (D:/UnrealEngine/Projects/Squeak/Plugins/StreamlineCore/StreamlineCore.uplugin) over the corresponding engine version (../../../Engine/Plugins/Runtime/DLSS/StreamlineCore/StreamlineCore.uplugin).
+LogPluginManager: Display: By default, prioritizing project plugin (D:/UnrealEngine/Projects/Squeak/Plugins/NIS/NIS.uplugin) over the corresponding engine version (../../../Engine/Plugins/Runtime/DLSS/NIS/NIS.uplugin).
+LogPluginManager: Display: By default, prioritizing project plugin (D:/UnrealEngine/Projects/Squeak/Plugins/StreamlineDeepDVC/StreamlineDeepDVC.uplugin) over the corresponding engine version (../../../Engine/Plugins/Runtime/DLSS/StreamlineDeepDVC/StreamlineDeepDVC.uplugin).
+LogPluginManager: Display: By default, prioritizing project plugin (D:/UnrealEngine/Projects/Squeak/Plugins/StreamlineNGXCommon/StreamlineNGXCommon.uplugin) over the corresponding engine version (../../../Engine/Plugins/Runtime/DLSS/StreamlineNGXCommon/StreamlineNGXCommon.uplugin).
+LogPluginManager: Display: By default, prioritizing project plugin (D:/UnrealEngine/Projects/Squeak/Plugins/StreamlineReflex/StreamlineReflex.uplugin) over the corresponding engine version (../../../Engine/Plugins/Runtime/DLSS/StreamlineReflex/StreamlineReflex.uplugin).
+LogPluginManager: Display: By default, prioritizing project plugin (D:/UnrealEngine/Projects/Squeak/Plugins/StreamlineDLSSG/StreamlineDLSSG.uplugin) over the corresponding engine version (../../../Engine/Plugins/Runtime/DLSS/StreamlineDLSSG/StreamlineDLSSG.uplugin).
+LogPluginManager: Display: Module OnlineSubsystemSteam from plugin SteamIntegrationKit is already associated with plugin OnlineSubsystemSteam (maybe because the plugin should be using bIsPluginExtension)
+LogPluginManager: Display: Module SteamSockets from plugin SteamIntegrationKit is already associated with plugin SteamSockets (maybe because the plugin should be using bIsPluginExtension)
+LogPluginManager: Display: Module SteamController from plugin SteamIntegrationKit is already associated with plugin SteamController (maybe because the plugin should be using bIsPluginExtension)
+LogCsvProfiler: Display: Metadata set : systemresolution.resx="1280"
+LogCsvProfiler: Display: Metadata set : systemresolution.resy="720"
+LogAudio: Display: Audio Device Manager not initializing due to all audio being disabled. If this is not intentional, please check command line arguments for "-nosound".
+LogConfig: Display: Loading VulkanPC ini files took 0.07 seconds
+LogConfig: Display: Loading Mac ini files took 0.07 seconds
+LogConfig: Display: Loading IOS ini files took 0.08 seconds
+LogConfig: Display: Loading Android ini files took 0.09 seconds
+LogConfig: Display: Loading Unix ini files took 0.09 seconds
+LogConfig: Display: Loading TVOS ini files took 0.09 seconds
+LogConfig: Display: Loading Windows ini files took 0.09 seconds
+LogConfig: Display: Loading Linux ini files took 0.10 seconds
+LogConfig: Display: Loading VisionOS ini files took 0.05 seconds
+LogAssetRegistry: Display: Asset registry cache read as 124.8 MiB from ../../../../Projects/Squeak/Intermediate/CachedAssetRegistry_0.bin.
+RenderDocPlugin: Display: RenderDoc plugin will not be loaded. Use '-AttachRenderDoc' on the cmd line or enable 'renderdoc.AutoAttach' in the plugin settings.
+LogSteamShared: Display: Loading Steam SDK 1.6
+LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+LogHAL: Display: Platform has ~ 32 GB [34281312256 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+LogTextureFormatASTC: Display: ASTCEnc version 5.0.1 library loaded
+LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatASTC
+LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatDXT
+LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatETC2
+LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatIntelISPCTexComp
+LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatUncompressed
+LogTextureFormatOodle: Display: Oodle Texture TFO init; latest sdk version = 2.9.13
+LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.13.dll
+LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.5.dll
+LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatOodle
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_OpenXR'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_OpenXRClient'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxEditor'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacEditor'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsEditor'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+LogTargetPlatformManager: Display: Building Assets For Windows
+LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+LogObj: Display: Attempting to load config data for Default__SlateThemeManager before the Class has been constructed/registered/linked (likely during module loading or early startup). This will result in the load silently failing and should be fixed.
+LogCsvProfiler: Display: Metadata set : verbatimrhiname="Null"
+LogCsvProfiler: Display: Metadata set : rhiname="Null"
+LogCsvProfiler: Display: Metadata set : rhifeaturelevel="SM6"
+LogCsvProfiler: Display: Metadata set : shaderplatform="PCD3D_SM6"
+LogDerivedDataCache: Display: Memory: Max Cache Size: -1 MB
+LogDerivedDataCache: Display: ../../../Engine/DerivedDataCache/Compressed.ddp: Opened pak cache for reading. (1350 MiB)
+LogZenServiceInstance: Display: Unreal Zen Storage Server HTTP service at [::1]:8558 status: OK!.
+LogDerivedDataCache: Display: ZenLocal: Using ZenServer HTTP service at http://[::1]:8558/ with namespace ue.ddc status: OK!.
+LogDerivedDataCache: Display: C:/Users/Feyokon/AppData/Local/UnrealEngine/Common/DerivedDataCache: Performance: Latency=0.03ms. RandomReadSpeed=859.63MBs, RandomWriteSpeed=88.01MBs. Assigned SpeedClass 'Local'
+LogUbaHorde: Display: UBA/Horde Configuration [Uba.Provider.Horde]: Not Enabled
+LogShaderCompilers: Display: Using 9 local workers for shader compilation
+LogShaderCompilers: Display: Compiling shader autogen file: ../../../../Projects/Squeak/Intermediate/ShaderAutogen/PCD3D_SM6/AutogenShaderHeaders.ush
+LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+LogEditorDomain: Display: EditorDomain is Disabled
+LogAssetRegistry: Display: AssetDataGatherer spent 0.005s loading caches ../../../../Projects/Squeak/Intermediate/CachedAssetRegistry_*.bin.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Normal.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Roughness.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Height.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Metallic.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_BaseColor.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_AO.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Emissive.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Roughness.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Height.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Normal.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Metallic.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Emissive.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/StaticMesh/SM_Med_Ticket_Machine.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_BaseColor.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_AO.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Materials/M_Med_Ticket_Machine.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Materials/M_Med_Ticket_Machine_Screen.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Maps/Showcase_Map.umap. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Maps/Showcase_Map_BuiltData.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogDeviceProfileManager: Display: Deviceprofile LinuxArm64Editor not found.
+LogDeviceProfileManager: Display: Deviceprofile LinuxArm64 not found.
+LogCsvProfiler: Display: Metadata set : deviceprofile="WindowsEditor"
+LogStreaming: Display: FlushAsyncLoading(1): 1 QueuedPackages, 0 AsyncPackages
+LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness because of a recursive sync load
+LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec because of a recursive sync load
+LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Flushing package /Engine/EngineMaterials/WorldGridMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/EngineMaterials/T_Default_Material_Grid_M because of a recursive sync load
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/EngineMaterials/T_Default_Material_Grid_N because of a recursive sync load
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade because of a recursive sync load
+LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/WorldGridMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultPostProcessMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultLightFunctionMaterial is adding a dynamic import to package /Engine/EngineMaterials/DefaultDiffuse because of a recursive sync load
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultLightFunctionMaterial is adding a dynamic import to package /Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components because of a recursive sync load
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultLightFunctionMaterial is adding a dynamic import to package /Engine/EngineMaterials/DefaultPostProcessMaterial because of a recursive sync load
+LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultPostProcessMaterial (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultDeferredDecalMaterial is adding a dynamic import to package /Engine/EngineMaterials/DefaultLightFunctionMaterial because of a recursive sync load
+LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Package /Engine/EngineMaterials/WorldGridMaterial is adding a dynamic import to package /Engine/EngineMaterials/DefaultDeferredDecalMaterial because of a recursive sync load
+LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/WorldGridMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/EngineMaterials/WorldGridMaterial because of a recursive sync load
+LogStreaming: Display: Flushing package /Engine/EngineMaterials/WorldGridMaterial (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+LogTextureEncodingSettings: Display: Texture Encode Speed: Final (cook).
+LogTextureEncodingSettings: Display: Oodle Texture Encode Speed settings: Fast: RDO Off Lambda=0, Effort=Normal Final: RDO Off Lambda=0, Effort=Normal
+LogTextureEncodingSettings: Display: Shared linear texture encoding: Disabled
+LogMeshReduction: Display: Using QuadricMeshReduction for automatic static mesh reduction
+LogMeshReduction: Display: Using SkeletalMeshReduction for automatic skeletal mesh reduction
+LogMeshReduction: Display: Using ProxyLODMeshReduction for automatic mesh merging
+LogMeshReduction: Display: No distributed automatic mesh merging module available
+LogVirtualization: Display: VirtualizationSystem name found in ini file: None
+LogVirtualization: Display: FNullVirtualizationSystem mounted, virtualization will be disabled
+LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize started...
+LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize took 3.431 ms
+LogMetaSound: Display: MetaSound Page Target Initialized to 'Default'
+LogAudio: Display: Registering Engine Module Parameter Interfaces...
+LogLiveLinkHub: Display: LiveLinkHubModule::StartupModule - LiveLinkHub instance will not be created. (Config: 0)
+LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogTemp: Warning: Constructor: Registry query for SIK_STEAM_USERNAME failed with error: 2
+LogTemp: Warning: Constructor: Registry query for SIK_STEAM_PASSWORD failed with error: 2
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogTemp: Warning: PostInitProperties: SIK_STEAM_USERNAME environment variable is empty
+LogTemp: Warning: PostInitProperties: SIK_STEAM_PASSWORD environment variable is empty
+LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+LogCook: Display: CookProcessCount=1. CookMultiprocess is disabled and the cooker is running as a single process.
+LogCook: Display: CookSettings for Memory:
+	MemoryMaxUsedVirtual 0MiB
+	MemoryMaxUsedPhysical 0MiB
+	MemoryMinFreeVirtual 2048MiB
+	MemoryMinFreePhysical 2048MiB
+	MemoryTriggerGCAtPressureLevel None
+	SoftGCMemoryUseTrigger disabled
+	SoftGCTimeBudgetTrigger enabled (0.05 budget, 30s min period)
+LogCook: Display: SkipOnlyEditorOnly is enabled, unsolicited packages will not be cooked unless they are referenced from the cooked version of the instigator package.
+LogAssetRegistry: Display: Triggering cache save on discovery complete
+LogEditorDomain: Display: Cycle detected in parents of class /Script/RigVMDeveloper.RigVMUnitNode. Allow flags for editordomain and incremental cooking will be invalid.
+LogEditorDomain: Display: Class /script/PropertyBindingUtilsModule.PropertyBindingPropertyAccess is imported by a package but does not exist in memory. EditorDomain keys for packages using it will be invalid if it still exists.
+	To clear this message, resave packages that use the deleted class, or load its module earlier than the packages that use it are referenced.
+LogEditorDomain: Display: Cycle detected in parents of class /Script/LiveLinkGraphNode.K2Node_EvaluateLiveLinkFrameWithSpecificRole. Allow flags for editordomain and incremental cooking will be invalid.
+LogZenStore: Display: Establishing oplog 'Squeak.8223fdfc/EditorDomain'
+LogZenStore: Display: Zen project 'Squeak.8223fdfc' already exists
+LogZenStore: Display: Zen oplog 'Squeak.8223fdfc/EditorDomain' already exists
+LogCook: Display: Waiting for Asset Registry
+LogPlacementMode: Display: The Asset Registry is done with its initial scan, the list of placeable classes has been updated.
+LogAssetRegistry: Display: Asset registry cache written as 0.0 MiB to ../../../../Projects/Squeak/Intermediate/CachedAssetRegistry_*.bin
+LogCook: Display: FULL COOK: Neither -legacyiterative nor -cookincremental were specified. Deleting previously cooked packages for platform Windows and recooking all packages discovered in the current cook.
+LogCook: Display: Sandbox cleanup took 0.103 seconds for platforms Windows
+LogCook: Display: Compiling global changed shaders for platform 'Windows'
+LogShaderCompilers: Display: Compiling shader autogen file: ../../../../Projects/Squeak/Intermediate/ShaderAutogen/PCD3D_SM5/AutogenShaderHeaders.ush
+LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+LogShaderLibrary: Display:
+LogShaderLibrary: Display: Shader Library 'Global' (PCD3D_SM6-PCD3D_SM6) Stats:
+LogShaderLibrary: Display: =================
+LogShaderLibrary: Display: Assets: 1, Unique Shadermaps: 512 (51200.00%)
+LogShaderLibrary: Display: Total Shaders: 10833, Unique Shaders: 10833 (100.00%)
+LogShaderLibrary: Display: Total Shader Size: 139.31mb, Unique Shaders Size: 139.31mb (100.00%)
+LogShaderLibrary: Display: === Extended info:
+LogShaderLibrary: Display: Minimum number of shaders in shadermap: 1
+LogShaderLibrary: Display: Median number of shaders in shadermap: 4
+LogShaderLibrary: Display: Maximum number of shaders in shadermap: 583
+LogShaderLibrary: Display: Number of shadermaps referencing top 10 most shared shaders:
+LogShaderLibrary: Display:     1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+LogShaderLibrary: Display: Unique shaders itemization (sorted by compressed size):
+LogShaderLibrary: Display: SF_Compute: 8032 shaders (74.14%), compressed size: 98.34 MB (12.54 KB avg per shader), uncompressed size: 128.45 MB (16.38 KB avg per shader)
+LogShaderLibrary: Display: SF_Pixel: 1930 shaders (17.82%), compressed size: 21.05 MB (11.17 KB avg per shader), uncompressed size: 27.71 MB (14.70 KB avg per shader)
+LogShaderLibrary: Display: SF_RayGen: 708 shaders (6.54%), compressed size: 19.45 MB (28.13 KB avg per shader), uncompressed size: 26.80 MB (38.76 KB avg per shader)
+LogShaderLibrary: Display: SF_Vertex: 129 shaders (1.19%), compressed size: 0.34 MB (2.71 KB avg per shader), uncompressed size: 0.42 MB (3.36 KB avg per shader)
+LogShaderLibrary: Display: SF_RayHitGroup: 19 shaders (0.18%), compressed size: 0.06 MB (3.31 KB avg per shader), uncompressed size: 0.07 MB (3.87 KB avg per shader)
+LogShaderLibrary: Display: SF_RayMiss: 9 shaders (0.08%), compressed size: 0.05 MB (5.19 KB avg per shader), uncompressed size: 0.06 MB (7.23 KB avg per shader)
+LogShaderLibrary: Display: SF_RayCallable: 2 shaders (0.02%), compressed size: 0.01 MB (7.29 KB avg per shader), uncompressed size: 0.02 MB (9.12 KB avg per shader)
+LogShaderLibrary: Display: SF_Geometry: 3 shaders (0.03%), compressed size: 0.01 MB (2.15 KB avg per shader), uncompressed size: 0.01 MB (3.31 KB avg per shader)
+LogShaderLibrary: Display: SF_WorkGraphComputeNode: 1 shaders (0.01%), compressed size: 0.00 MB (2.75 KB avg per shader), uncompressed size: 0.00 MB (3.35 KB avg per shader)
+LogShaderLibrary: Display: Textual dump saved to '../../../../Projects/Squeak/Saved/Shaders/PCD3D_SM6-PCD3D_SM6/ShaderDebug-Global-PCD3D_SM6-PCD3D_SM6/Dump.txt'
+LogShaderLibrary: Display: =================
+LogShaderLibrary: Display:
+LogShaderLibrary: Display: Shader Library 'Global' (PCD3D_SM5-PCD3D_SM5) Stats:
+LogShaderLibrary: Display: =================
+LogShaderLibrary: Display: Assets: 1, Unique Shadermaps: 351 (35100.00%)
+LogShaderLibrary: Display: Total Shaders: 4251, Unique Shaders: 4239 (99.72%)
+LogShaderLibrary: Display: Total Shader Size: 13.22mb, Unique Shaders Size: 13.21mb (99.97%)
+LogShaderLibrary: Display: === Extended info:
+LogShaderLibrary: Display: Minimum number of shaders in shadermap: 1
+LogShaderLibrary: Display: Median number of shaders in shadermap: 3
+LogShaderLibrary: Display: Maximum number of shaders in shadermap: 303
+LogShaderLibrary: Display: Number of shadermaps referencing top 10 most shared shaders:
+LogShaderLibrary: Display:     3, 3, 2, 2, 2, 2, 2, 2, 2, 2
+LogShaderLibrary: Display: Unique shaders itemization (sorted by compressed size):
+LogShaderLibrary: Display: SF_Compute: 2452 shaders (57.84%), compressed size: 6.68 MB (2.79 KB avg per shader), uncompressed size: 25.38 MB (10.60 KB avg per shader)
+LogShaderLibrary: Display: SF_Pixel: 1681 shaders (39.66%), compressed size: 6.47 MB (3.94 KB avg per shader), uncompressed size: 31.47 MB (19.17 KB avg per shader)
+LogShaderLibrary: Display: SF_Vertex: 104 shaders (2.45%), compressed size: 0.06 MB (0.60 KB avg per shader), uncompressed size: 0.13 MB (1.29 KB avg per shader)
+LogShaderLibrary: Display: SF_Geometry: 2 shaders (0.05%), compressed size: 0.00 MB (0.49 KB avg per shader), uncompressed size: 0.00 MB (1.55 KB avg per shader)
+LogShaderLibrary: Display: Textual dump saved to '../../../../Projects/Squeak/Saved/Shaders/PCD3D_SM5-PCD3D_SM5/ShaderDebug-Global-PCD3D_SM5-PCD3D_SM5/Dump.txt'
+LogShaderLibrary: Display: =================
+LogCook: Display: Discovering localized assets for cultures: en
+LogCook: Display: Found 0 localized assets
+LogCook: Display: Cooked packages 0 Packages Remain 405 Total 405
+LogCook: Display: Cook Diagnostics: OpenFileHandles=233, VirtualMemory=1808MiB, VirtualMemoryAvailable=17417MiB
+LogGameplayTags: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_0\base\status_effects\structure\F_ModifierHandle.uasset: Invalid GameplayTag False found in property /Game/content_0/base/status_effects/structure/F_Modifier.F_Modifier:TargetStatTag_17_21E2C7D242419E06798571B32D85E2A4.
+LogGameplayTags: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_0\base\status_effects\structure\F_ModifierHandle.uasset: Invalid GameplayTag False found in object UserDefinedStruct /Game/content_0/base/status_effects/structure/F_ModifierHandle.F_ModifierHandle.
+LogGameplayTags: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_0\base\status_effects\BP_ModifierManagerComponent.uasset: Invalid GameplayTag False found in object K2Node_MakeStruct /Game/content_0/base/status_effects/BP_ModifierManagerComponent.BP_ModifierManagerComponent:AddModifier.K2Node_MakeStruct_1.
+LogBlueprint: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_1\scripts\animations\AnimBP_Ward_Laraine.uasset: [Compiler] Node  Blendspace Player 'AnimBS_Reaction_Laraine'  uses potentially thread-unsafe call  Get AIController . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+LogBlueprint: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_1\scripts\animations\AnimBP_Ward_Laraine.uasset: [Compiler] Node  Blendspace Player 'AnimBS_Reaction_Laraine'  uses potentially thread-unsafe call  Get Blackboard . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+LogBlueprint: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_1\scripts\animations\AnimBP_Ward_Laraine.uasset: [Compiler] Node  Blendspace Player 'AnimBS_Reaction_Laraine'  uses potentially thread-unsafe call  Get Blackboard . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+LogCook: Display: Cooked packages 0 Packages Remain 1593 Total 1593
+LogCook: Display: Garbage collection triggered (Soft). Triggered by conditions:
+  CookSettings.SoftGCTimeTrigger: Periodic triggering of SoftGC: No duration data.
+LogCookCommandlet: Display: GarbageCollection... (Periodic GC)
+LogCook: Display: Cooked packages 176 Packages Remain 1420 Total 1596
+LogDeviceProfileManager: Display: Deviceprofile None not found.
+LogConsoleManager: Warning: Performance warning: Many (31) failed FindConsoleObject() for 'r.PathTracing.HeterogeneousVolumes'.
+LogConsoleManager: Warning: Performance warning: Many (31) failed FindConsoleObject() for 'r.HeterogeneousVolumes.FrustrumGrid.MaxBottomLevelMemoryInMegabytes'.
+LogConsoleManager: Warning: Performance warning: Many (31) failed FindConsoleObject() for 'r.HeterogeneousVolumes.FrustrumGrid.ShadingRate'.
+LogScript: Warning: const_room21: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_0
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_0
+LogScript: Warning: const_room: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_1
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_1
+LogScript: Warning: const_room10: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_10
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_10
+LogScript: Warning: const_room11: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_11
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_11
+LogScript: Warning: const_room12: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_12
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_12
+LogScript: Warning: const_room15: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_15
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_15
+LogScript: Warning: const_room18: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_18
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_18
+LogScript: Warning: const_room19: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_19
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_19
+LogScript: Warning: const_room7: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_2
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_2
+LogScript: Warning: const_room20: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_20
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_20
+LogScript: Warning: const_room22: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_21
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_21
+LogScript: Warning: const_room23: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_22
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_22
+LogScript: Warning: const_room24: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_23
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_23
+LogScript: Warning: const_room25: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_24
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_24
+LogScript: Warning: const_room27: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_26
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_26
+LogConsoleManager: Warning: Performance warning: Many (500) failed FindConsoleObject() across all CVars. Fail counts per name:
+LogConsoleManager: Warning:    r.Nanite.RequireDX12 : 1
+LogConsoleManager: Warning:    fx.Niagara.EditorPerformanceStatsEnabled : 1
+LogConsoleManager: Warning:    RunTask : 1
+LogConsoleManager: Warning:    CancelAllTasks : 1
+LogConsoleManager: Warning:    r.ShaderCompiler.PreprocessedJobCache : 1
+LogConsoleManager: Warning:    Slate.CacheRenderData : 3
+LogConsoleManager: Warning:    TaskGraph.EnablePowerSavingThreadPriorityReduction : 1
+LogConsoleManager: Warning:    r.SceneCulling.ExplicitCellBounds : 1
+LogConsoleManager: Warning:    r.GPUStatsEnabled : 1
+LogConsoleManager: Warning:    ios.PhysicalScreenDensity : 1
+LogConsoleManager: Warning:    r.PathTracing.HeterogeneousVolumes : 164
+LogConsoleManager: Warning:    r.HeterogeneousVolumes.FrustrumGrid.MaxBottomLevelMemoryInMegabytes : 162
+LogConsoleManager: Warning:    r.HeterogeneousVolumes.FrustrumGrid.ShadingRate : 162
+LogScript: Warning: const_room28: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_27
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_27
+LogScript: Warning: const_room29: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_28
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_28
+LogScript: Warning: const_room2: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_3
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_3
+LogScript: Warning: const_room30: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_30
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_30
+LogScript: Warning: const_room31: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_31
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_31
+LogScript: Warning: const_room32: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_32
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_32
+LogScript: Warning: const_room33: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_33
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_33
+LogScript: Warning: const_room34: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_34
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_34
+LogScript: Warning: const_room35: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_35
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_35
+LogScript: Warning: const_room36: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_36
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_36
+LogScript: Warning: const_room64: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_38
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_38
+LogScript: Warning: const_room38: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_39
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_39
+LogScript: Warning: const_room3: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_4
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_4
+LogScript: Warning: const_room44: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_40
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_40
+LogScript: Warning: const_room39: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_41
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_41
+LogScript: Warning: const_room40: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_42
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_42
+LogScript: Warning: const_room41: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_43
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_43
+LogScript: Warning: const_room42: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_44
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_44
+LogScript: Warning: const_room43: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_45
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_45
+LogScript: Warning: const_room45: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_47
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_47
+LogScript: Warning: const_room46: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_48
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_48
+LogScript: Warning: const_room47: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_49
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_49
+LogScript: Warning: const_room48: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_50
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_50
+LogScript: Warning: const_room26: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_51
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_51
+LogScript: Warning: const_room51: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_53
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_53
+LogScript: Warning: const_room52: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_54
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_54
+LogScript: Warning: const_room53: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_55
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_55
+LogScript: Warning: const_room49: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_57
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_57
+LogScript: Warning: const_room54: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_58
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_58
+LogScript: Warning: const_room55: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_59
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_59
+LogScript: Warning: const_room56: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_60
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_60
+LogScript: Warning: const_room57: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_61
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_61
+LogScript: Warning: const_room58: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_62
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_62
+LogScript: Warning: const_room59: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_63
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_63
+LogScript: Warning: const_room60: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_64
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_64
+LogScript: Warning: const_room61: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_65
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_65
+LogScript: Warning: const_room62: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_66
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_66
+LogScript: Warning: const_room8: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_8
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_8
+LogScript: Warning: const_room9: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_9
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_9
+LogScript: Warning: const_room: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_1
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_1
+LogScript: Warning: const_room10: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_10
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_10
+LogScript: Warning: const_room11: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_11
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_11
+LogScript: Warning: const_room12: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_12
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_12
+LogScript: Warning: const_room15: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_15
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_15
+LogScript: Warning: const_room18: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_18
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_18
+LogScript: Warning: const_room19: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_19
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_19
+LogScript: Warning: const_room7: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_2
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_2
+LogScript: Warning: const_room20: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_20
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_20
+LogScript: Warning: const_room23: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_22
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_22
+LogScript: Warning: const_room24: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_23
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_23
+LogScript: Warning: const_room25: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_24
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_24
+LogScript: Warning: const_room27: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_26
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_26
+LogScript: Warning: const_room28: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_27
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_27
+LogScript: Warning: const_room29: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_28
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_28
+LogScript: Warning: const_room2: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_3
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_3
+LogScript: Warning: const_room30: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_30
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_30
+LogScript: Warning: const_room31: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_31
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_31
+LogScript: Warning: const_room32: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_32
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_32
+LogScript: Warning: const_room33: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_33
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_33
+LogScript: Warning: const_room34: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_34
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_34
+LogScript: Warning: const_room35: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_35
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_35
+LogScript: Warning: const_room36: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_36
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_36
+LogScript: Warning: const_room64: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_38
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_38
+LogScript: Warning: const_room38: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_39
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_39
+LogScript: Warning: const_room3: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_4
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_4
+LogScript: Warning: const_room44: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_40
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_40
+LogScript: Warning: const_room39: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_41
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_41
+LogScript: Warning: const_room40: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_42
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_42
+LogScript: Warning: const_room41: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_43
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_43
+LogScript: Warning: const_room42: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_44
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_44
+LogScript: Warning: const_room43: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_45
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_45
+LogScript: Warning: const_room45: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_47
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_47
+LogScript: Warning: const_room46: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_48
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_48
+LogScript: Warning: const_room47: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_49
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_49
+LogScript: Warning: const_room48: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_50
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_50
+LogScript: Warning: const_room26: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_51
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_51
+LogScript: Warning: const_room51: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_53
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_53
+LogScript: Warning: const_room52: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_54
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_54
+LogScript: Warning: const_room53: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_55
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_55
+LogScript: Warning: const_room49: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_57
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_57
+LogScript: Warning: const_room55: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_59
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_59
+LogScript: Warning: const_room56: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_60
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_60
+LogScript: Warning: const_room57: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_61
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_61
+LogScript: Warning: const_room58: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_62
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_62
+LogScript: Warning: const_room59: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_63
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_63
+LogScript: Warning: const_room60: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_64
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_64
+LogScript: Warning: const_room61: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_65
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_65
+LogScript: Warning: const_room62: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_66
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_66
+LogScript: Warning: const_room8: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_8
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_8
+LogScript: Warning: const_room9: No Room Key Assigned
+
+	const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_9
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogScript: Warning: Script Msg called by: const_room_C /Game/content_1/worlds/gameplay_trailer_fire.gameplay_trailer_fire:PersistentLevel.const_room_C_9
+LogCook: Display: Cooked packages 192 Packages Remain 1404 Total 1596
+LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.8.dll
+LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.10.dll
+LogCook: Display: Cooked packages 336 Packages Remain 1261 Total 1597
+LogCook: Display: Cooked packages 576 Packages Remain 1022 Total 1598
+LogStaticMesh: Display: Waiting for static meshes to be ready 37/48 (/ControlRig/Controls/ControlRig_Sphere_1mm) ...
+LogCook: Display: Cooked packages 800 Packages Remain 798 Total 1598
+LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.12.dll
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Decal_Opacity_Detail.T_Decal_Opacity_Detail is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Decal_Opacity_Detail.T_Decal_Opacity_Detail is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Text_Decal_01.T_Text_Decal_01 is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Text_Decal_01.T_Text_Decal_01 is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Decal_Opacity_Detail.T_Decal_Opacity_Detail is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Text_Decal_01.T_Text_Decal_01 is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Decal_Opacity_Detail.T_Decal_Opacity_Detail is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Text_Decal_01.T_Text_Decal_01 is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Decal_Opacity_Detail.T_Decal_Opacity_Detail is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Text_Decal_01.T_Text_Decal_01 is virtual and has NoMips - forcing to SimpleAverage.
+LogCook: Display: Cooked packages 1116 Packages Remain 482 Total 1598
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Decal_Opacity_Detail.T_Decal_Opacity_Detail is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Decal_Opacity_Detail.T_Decal_Opacity_Detail is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Decal_Opacity_Detail.T_Decal_Opacity_Detail is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Text_Decal_01.T_Text_Decal_01 is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Text_Decal_01.T_Text_Decal_01 is virtual and has NoMips - forcing to SimpleAverage.
+LogTexture: Display: Texture /Game/content_2/AbandonedHospital/Textures/T_Text_Decal_01.T_Text_Decal_01 is virtual and has NoMips - forcing to SimpleAverage.
+LogCook: Display: Cooked packages 1424 Packages Remain 174 Total 1598
+LogCook: Display: Cook Diagnostics: OpenFileHandles=4869, VirtualMemory=9195MiB, VirtualMemoryAvailable=10044MiB
+LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.11.dll
+LogCook: Display: Cooked packages 1510 Packages Remain 88 Total 1598
+LogCook: Display: Cooked packages 1511 Packages Remain 87 Total 1598
+LogCook: Display: Garbage collection triggered (Soft). Triggered by conditions:
+  CookSettings.SoftGCTimeTrigger: Periodic triggering of SoftGC: SoftGCTimeFractionBudget == 0.050. TimeSinceLastGCSeconds == 30.006. CurrentTimeBudget == 1.579. ExpectedDuration == 0.056.
+LogCookCommandlet: Display: GarbageCollection... (Periodic GC)
+LogCook: Display: Cooked packages 1598 Packages Remain 0 Total 1598
+LogCook: Display: Cook Diagnostics: OpenFileHandles=922, VirtualMemory=5790MiB, VirtualMemoryAvailable=13423MiB
+LogCook: Display: Finishing up...
+LogAssetRegistryGenerator: Display: Saving asset registry v21.
+LogAssetRegistryGenerator: Display: Generated development asset registry D:/UnrealEngine/Projects/Squeak/Saved/Cooked/Windows/Squeak/Metadata/DevelopmentAssetRegistry.bin num assets 1737, size is 3752.06kb, XxHash64[LE] = 0xE03A67A945835B2A, waited on hash 0.00 seconds
+LogAssetRegistryGenerator: Display: Generated asset registry num assets 1713, size is 2990.18kb
+LogShaderLibrary: Display:
+LogShaderLibrary: Display: Shader Library 'Squeak' (PCD3D_SM6-PCD3D_SM6) Stats:
+LogShaderLibrary: Display: =================
+LogShaderLibrary: Display: Assets: 253, Unique Shadermaps: 209 (82.61%)
+LogShaderLibrary: Display: Total Shaders: 9261, Unique Shaders: 6566 (70.90%)
+LogShaderLibrary: Display: Total Shader Size: 94.18mb, Unique Shaders Size: 74.45mb (79.05%)
+LogShaderLibrary: Display: === Extended info:
+LogShaderLibrary: Display: Minimum number of shaders in shadermap: 1
+LogShaderLibrary: Display: Median number of shaders in shadermap: 25
+LogShaderLibrary: Display: Maximum number of shaders in shadermap: 1028
+LogShaderLibrary: Display: Number of shadermaps referencing top 10 most shared shaders:
+LogShaderLibrary: Display:     182, 47, 45, 39, 38, 35, 28, 28, 28, 27
+LogShaderLibrary: Display: Unique shaders itemization (sorted by compressed size):
+LogShaderLibrary: Display: SF_Pixel: 3078 shaders (46.88%), compressed size: 27.85 MB (9.27 KB avg per shader), uncompressed size: 36.68 MB (12.20 KB avg per shader)
+LogShaderLibrary: Display: SF_Compute: 1289 shaders (19.63%), compressed size: 22.50 MB (17.88 KB avg per shader), uncompressed size: 30.06 MB (23.88 KB avg per shader)
+LogShaderLibrary: Display: SF_RayHitGroup: 902 shaders (13.74%), compressed size: 13.41 MB (15.22 KB avg per shader), uncompressed size: 17.31 MB (19.66 KB avg per shader)
+LogShaderLibrary: Display: SF_Vertex: 1073 shaders (16.34%), compressed size: 8.59 MB (8.19 KB avg per shader), uncompressed size: 11.52 MB (10.99 KB avg per shader)
+LogShaderLibrary: Display: SF_Mesh: 210 shaders (3.20%), compressed size: 1.95 MB (9.52 KB avg per shader), uncompressed size: 2.37 MB (11.54 KB avg per shader)
+LogShaderLibrary: Display: SF_RayMiss: 4 shaders (0.06%), compressed size: 0.08 MB (20.07 KB avg per shader), uncompressed size: 0.11 MB (28.25 KB avg per shader)
+LogShaderLibrary: Display: SF_RayCallable: 8 shaders (0.12%), compressed size: 0.06 MB (7.18 KB avg per shader), uncompressed size: 0.07 MB (9.38 KB avg per shader)
+LogShaderLibrary: Display: SF_Geometry: 2 shaders (0.03%), compressed size: 0.01 MB (5.31 KB avg per shader), uncompressed size: 0.01 MB (7.49 KB avg per shader)
+LogShaderLibrary: Display: Textual dump saved to '../../../../Projects/Squeak/Saved/Shaders/PCD3D_SM6-PCD3D_SM6/ShaderDebug-Squeak-PCD3D_SM6-PCD3D_SM6/Dump.txt'
+LogShaderLibrary: Display: =================
+LogShaderLibrary: Display:
+LogShaderLibrary: Display: Shader Library 'Squeak' (PCD3D_SM5-PCD3D_SM5) Stats:
+LogShaderLibrary: Display: =================
+LogShaderLibrary: Display: Assets: 253, Unique Shadermaps: 208 (82.21%)
+LogShaderLibrary: Display: Total Shaders: 5327, Unique Shaders: 3770 (70.77%)
+LogShaderLibrary: Display: Total Shader Size: 17.18mb, Unique Shaders Size: 13.75mb (80.01%)
+LogShaderLibrary: Display: === Extended info:
+LogShaderLibrary: Display: Minimum number of shaders in shadermap: 1
+LogShaderLibrary: Display: Median number of shaders in shadermap: 17
+LogShaderLibrary: Display: Maximum number of shaders in shadermap: 528
+LogShaderLibrary: Display: Number of shadermaps referencing top 10 most shared shaders:
+LogShaderLibrary: Display:     47, 38, 38, 34, 28, 28, 27, 26, 25, 25
+LogShaderLibrary: Display: Unique shaders itemization (sorted by compressed size):
+LogShaderLibrary: Display: SF_Pixel: 2530 shaders (67.11%), compressed size: 8.76 MB (3.55 KB avg per shader), uncompressed size: 30.73 MB (12.44 KB avg per shader)
+LogShaderLibrary: Display: SF_Vertex: 858 shaders (22.76%), compressed size: 2.55 MB (3.04 KB avg per shader), uncompressed size: 8.57 MB (10.22 KB avg per shader)
+LogShaderLibrary: Display: SF_Compute: 380 shaders (10.08%), compressed size: 2.43 MB (6.55 KB avg per shader), uncompressed size: 11.00 MB (29.65 KB avg per shader)
+LogShaderLibrary: Display: SF_Geometry: 2 shaders (0.05%), compressed size: 0.00 MB (1.68 KB avg per shader), uncompressed size: 0.01 MB (5.39 KB avg per shader)
+LogShaderLibrary: Display: Textual dump saved to '../../../../Projects/Squeak/Saved/Shaders/PCD3D_SM5-PCD3D_SM5/ShaderDebug-Squeak-PCD3D_SM5-PCD3D_SM5/Dump.txt'
+LogShaderLibrary: Display: =================
+LogCook: Display: Dependent plugin "SteamShared" referenced by "EOS Shared" wasn't found in enabled plugins list when creating cook metadata file... skipping
+LogCook: Display: Finalize package store(s)...
+LogCook: Display: Cook by the book total time in tick 35.816671s total time 43.293648
+LogCook: Display: Peak Used virtual 9339 MiB Peak Used physical 8571 MiB
+LogCook: Display: Packages Cooked: 1578, Packages Incrementally Skipped: 0, Packages Skipped by Platform: 20, Total Packages: 1598
+LogCookStats: Display: Hierarchy Timer Information:
+LogCookStats: Display:   Root: 0.000s (0)
+LogCookStats: Display:     CleanSandbox: 0.103s (1)
+LogCookStats: Display:     CollectFilesToCook: 0.008s (1)
+LogCookStats: Display:       CookModificationDelegate: 0.000s (1)
+LogCookStats: Display:     GenerateLongPackageName: 0.000s (1)
+LogCookStats: Display:     TickMainCookLoop: 35.817s (3)
+LogCookStats: Display:       PumpPollables: 0.006s (2)
+LogCookStats: Display:       PumpRequests: 0.043s (50)
+LogCookStats: Display:       LoadPackageForCooking: 9.279s (5926)
+LogCookStats: Display:       ValidateSourcePackage: 0.000s (1598)
+LogCookStats: Display:       SavingPackages: 21.733s (608)
+LogCookStats: Display:         PollPendingCookedPlatformDatas: 0.958s (53097)
+LogCookStats: Display:         PrepareSave: 0.727s (51623)
+LogCookStats: Display:         PrecachePlatformDataForNextPackage: 3.357s (1597)
+LogCookStats: Display:           PrepareSave: 3.356s (1927)
+LogCookStats: Display:         SaveCookedPackage: 16.234s (1598)
+LogCookStats: Display:           GEditorSavePackage: 15.987s (1598)
+LogCookStats: Display:             VerifyCanCookPackage: 0.009s (1578)
+LogCookStats: Display:         ClearAllCachedCookedPlatformData: 0.208s (1598)
+LogCookStats: Display:       PostLoadPackageFixup: 0.000s (3)
+LogCookStats: Display:       WaitForAsync: 4.427s (158677)
+LogCookStats: Display:     CookByTheBookFinished: 0.953s (1)
+LogCookStats: Display:       SavingCurrentIniSettings: 0.072s (1)
+LogCookStats: Display:         ProcessingAccessedStrings: 0.009s (1)
+LogCookStats: Display:       ChunkGeneration: 0.017s (1)
+LogCookStats: Display:       CalculateReferencedSet: 0.000s (1)
+LogCookStats: Display:       FinishPopulateShaderLibrary: 0.000s (1)
+LogCookStats: Display:       GeneratorPreSave: 0.001s (1)
+LogCookStats: Display:       BuildChunkManifest: 0.062s (1)
+LogCookStats: Display:         FixupPackageDependenciesForChunks: 0.010s (1)
+LogCookStats: Display:       SaveManifests: 0.000s (1)
+LogCookStats: Display:       SaveAssetRegistry: 0.159s (1)
+LogCookStats: Display:       WriteCookerOpenOrder: 0.063s (1)
+LogCookStats: Display:       WriteCookMetadata: 0.001s (1)
+LogCookStats: Display:       WriteReferencedSet: 0.003s (1)
+LogCookStats: Display:       FinalizePackageStore: 0.005s (1)
+LogCookStats: Display: Misc Cook Stats
+LogCookStats: Display: ===============
+LogCookStats: Display: Niagara
+LogCookStats: Display:     NiagaraScriptTranslationCount=0
+LogCookStats: Display:     NiagaraCpuScriptCompileCount=0
+LogCookStats: Display:     NiagaraCpuScriptDdcCacheHitCount=40
+LogCookStats: Display:     NiagaraCpuScriptDdcCacheMissCount=0
+LogCookStats: Display:     NiagaraGpuScriptCompileCount=0
+LogCookStats: Display:     NiagaraGpuScriptDdcCacheHitCount=12
+LogCookStats: Display:     NiagaraGpuScriptDdcCacheMissCount=0
+LogCookStats: Display:     NiagaraSystemWaitForCompilationCompleteTime=0.000237
+LogCookStats: Display: OpenColorIOShader.Misc
+LogCookStats: Display:     ShadersCompiled=0
+LogCookStats: Display: NiagaraShader.Misc
+LogCookStats: Display:     ShadersCompiled=0
+LogCookStats: Display: ComputeKernelShader.Misc
+LogCookStats: Display:     ShadersCompiled=0
+LogCookStats: Display: ShaderCompiler
+LogCookStats: Display:     BlockingTimeSec=0.000108
+LogCookStats: Display:     AsyncCompileTimeSec=0.000000
+LogCookStats: Display:     GlobalBeginCompileShaderTimeSec=0.000000
+LogCookStats: Display:     GlobalBeginCompileShaderCalls=0
+LogCookStats: Display:     ProcessAsyncResultsTimeSec=0.000245
+LogCookStats: Display: GlobalShader.Misc
+LogCookStats: Display:     ShadersCompiled=0
+LogCookStats: Display: Material
+LogCookStats: Display:     FinishCacheShadersSec=1.040087
+LogCookStats: Display: Package.Load
+LogCookStats: Display:     NumRequestedLoads=3466
+LogCookStats: Display:     NumPackagesLoaded=4667
+LogCookStats: Display:     NumInlineLoads=1201
+LogCookStats: Display:     LoadPackageTimeSec=9.504386
+LogCookStats: Display: Package.Save
+LogCookStats: Display:     NumPackagesIncrementallySkipped=0
+LogCookStats: Display:     NumPackagesSaved=1598
+LogCookStats: Display:     SavePackageTimeSec=10.897432
+LogCookStats: Display:     TagPackageExportsPresaveTimeSec=0.000000
+LogCookStats: Display:     TagPackageExportsTimeSec=0.000000
+LogCookStats: Display:     FullyLoadLoadersTimeSec=0.000000
+LogCookStats: Display:     ResetLoadersTimeSec=0.000000
+LogCookStats: Display:     TagPackageExportsGetObjectsWithOuter=0.000000
+LogCookStats: Display:     TagPackageExportsGetObjectsWithMarks=0.000000
+LogCookStats: Display:     SerializeImportsTimeSec=0.000000
+LogCookStats: Display:     SortExportsSeekfreeInnerTimeSec=0.000000
+LogCookStats: Display:     SerializeExportsTimeSec=0.000000
+LogCookStats: Display:     SerializeBulkDataTimeSec=0.012944
+LogCookStats: Display:     AsyncWriteTimeSec=0.000000
+LogCookStats: Display:     MBWritten=0.000000
+LogCookStats: Display: CookOnTheFlyServer
+LogCookStats: Display:     PeakRequestQueueSize=1593
+LogCookStats: Display:     PeakLoadQueueSize=56
+LogCookStats: Display:     PeakSaveQueueSize=323
+LogCookStats: Display: Package.DifferentPackagesSizeMBPerAsset
+LogCookStats: Display: Package.NumberOfDifferencesInPackagesPerAsset
+LogCookStats: Display: Package.PackageDifferencesSizeMBPerAsset
+LogCookStats: Display: Package.DiffTotal
+LogCookStats: Display:     NumberOfDifferentPackages=0
+LogCookStats: Display:     DifferentPackagesSizeMB=0.000000
+LogCookStats: Display:     NumberOfDifferencesInPackages=0
+LogCookStats: Display:     PackageDifferencesSizeMB=0.000000
+LogCookStats: Display: UnversionedProperties
+LogCookStats: Display:     SavedStructs=0
+LogCookStats: Display:     SavedMB=0
+LogCookStats: Display:     EquivalentTaggedMB=0
+LogCookStats: Display:     CompressionRatio=-nan(ind)
+LogCookStats: Display:     BitfieldWasteKB=0
+LogCookStats: Display:
+LogCookStats: Display: Cook Profile
+LogCookStats: Display: ============
+LogCookStats: Display:  0.CookWallTimeSec=50.864466
+LogCookStats: Display:  0. 0.StartupWallTimeSec=7.177803
+LogCookStats: Display:  0. 1.StartCookByTheBookTimeSec=6.338318
+LogCookStats: Display:  0. 1. 0.BlockOnAssetRegistryTimeSec=0.140927
+LogCookStats: Display:  0. 1. 1.GameCookModificationDelegateTimeSec=0.000103
+LogCookStats: Display:  0. 2.TickCookOnTheSideTimeSec=35.693736
+LogCookStats: Display:  0. 2. 0.TickCookOnTheSideLoadPackagesTimeSec=9.280391
+LogCookStats: Display:  0. 2. 1.TickCookOnTheSideSaveCookedPackageTimeSec=16.234030
+LogCookStats: Display:  0. 2. 1. 0.TickCookOnTheSideResolveRedirectorsTimeSec=0.000000
+LogCookStats: Display:  0. 2. 2.TickCookOnTheSidePrepareSaveTimeSec=4.086266
+LogCookStats: Display:  0. 3.TickLoopGCTimeSec=0.559714
+LogCookStats: Display:  0. 4.TickLoopRecompileShaderRequestsTimeSec=0.000000
+LogCookStats: Display:  0. 5.TickLoopShaderProcessAsyncResultsTimeSec=0.000008
+LogCookStats: Display:  0. 6.TickLoopProcessDeferredCommandsTimeSec=0.000002
+LogCookStats: Display:  0. 7.TickLoopTickCommandletStatsTimeSec=0.000001
+LogCookStats: Display:  0. 8.TickLoopFlushRenderingCommandsTimeSec=0.005375
+LogCookStats: Display:  0. 9.ShaderFlushTimeSec=0.000000
+LogCookStats: Display:  0. 10.ValidationTimeSec=0.000245
+LogCookStats: Display:  1.CookParameters=
+LogCookStats: Display:  1. 0.TargetPlatforms=Windows
+LogCookStats: Display:  1. 1.CookProject=Squeak
+LogCookStats: Display:  1. 2.CookCultures=en
+LogCookStats: Display:  1. 3.IsCookAll=false
+LogCookStats: Display:  1. 4.IsCookOnTheFly=false
+LogCookStats: Display:  1. 5.IsIterativeCook=false
+LogCookStats: Display:  1. 6.IsUnversioned=true
+LogCookStats: Display:  1. 7.CookLabel=
+LogCookStats: Display:  1. 8.IsFastCook=false
+LogCookStats: Display:
+LogCookStats: Display: DDC Summary Stats
+LogCookStats: Display: =================
+LogCookStats: Display: BackEnd         =InstalledDerivedDataBackendGraph
+LogCookStats: Display: HasLocalCache   =      true
+LogCookStats: Display: HasSharedCache  =     false
+LogCookStats: Display: HasCloudCache   =     false
+LogCookStats: Display: HasZenCache     =      true
+LogCookStats: Display: TotalGetHits    =     12837
+LogCookStats: Display: TotalGetMisses  =         1
+LogCookStats: Display: TotalGets       =     12838
+LogCookStats: Display: TotalGetHitPct  =  0.999922
+LogCookStats: Display: GetMissPct      =  0.000078
+LogCookStats: Display: TotalPutHits    =         1
+LogCookStats: Display: TotalPutMisses  =         0
+LogCookStats: Display: TotalPuts       =         1
+LogCookStats: Display: TotalPutHitPct  =  1.000000
+LogCookStats: Display: PutMissPct      =  0.000000
+LogCookStats: Display: LocalGetHits    =     12669
+LogCookStats: Display: LocalGetMisses  =         1
+LogCookStats: Display: LocalGetTotal   =     12670
+LogCookStats: Display: LocalGetHitPct  =  0.999921
+LogCookStats: Display: SharedGetHits   =         0
+LogCookStats: Display: SharedGetTotal  =         0
+LogCookStats: Display: SharedGetHitPct =  0.000000
+LogCookStats: Display: ZenLocalGetHits =     12669
+LogCookStats: Display: ZenLocalGetTotal=     12670
+LogCookStats: Display: ZenLocalGetHitPct=  0.999921
+LogCookStats: Display: ZenRemoteGetHits=         0
+LogCookStats: Display: ZenRemoteGetTotal=         0
+LogCookStats: Display: ZenRemoteGetHitPct=  0.000000
+LogCookStats: Display: CloudGetHits    =         0
+LogCookStats: Display: CloudGetTotal   =         0
+LogCookStats: Display: CloudGetHitPct  =  0.000000
+LogCookStats: Display: LocalLatency    =  0.903140
+LogCookStats: Display: LocalReadSpeed  =323.183367
+LogCookStats: Display: LocalWriteSpeed =  2.165509
+LogCookStats: Display: SharedLatency   =  0.000000
+LogCookStats: Display: SharedReadSpeed =  0.000000
+LogCookStats: Display: SharedWriteSpeed=  0.000000
+LogCookStats: Display: CloudLatency    =  0.000000
+LogCookStats: Display: CloudReadSpeed  =  0.000000
+LogCookStats: Display: CloudWriteSpeed =  0.000000
+LogCookStats: Display:
+LogCookStats: Display: DDC Resource Stats
+LogCookStats: Display: =======================================================================================================
+LogCookStats: Display: Asset Type                          Total Time (Sec)  GameThread Time (Sec)  Assets Built  MB Processed
+LogCookStats: Display: ----------------------------------  ----------------  ---------------------  ------------  ------------
+LogCookStats: Display: Texture                                        12.07                   0.00             0       1068.27
+LogCookStats: Display: BulkDataList                                    0.07                   0.00             0          0.75
+LogCookStats: Display: SparseVolumeTexture                             0.06                   0.04             0       1800.00
+LogCookStats: Display: GlobalShader                                    0.05                   0.07             0        156.58
+LogCookStats: Display: MaterialShader                                  0.02                   1.02             0        162.82
+LogCookStats: Display: StaticMesh                                      0.01                   0.01             0         23.69
+LogCookStats: Display: CardRepresentation                              0.01                   0.00             0          0.05
+LogCookStats: Display: DistanceField                                   0.01                   0.01             0          1.90
+LogCookStats: Display: NavCollision                                    0.01                   0.01             0          0.25
+LogCookStats: Display: STREAMEDAUDIO                                   0.00                   0.00             0          1.51
+LogCookStats: Display: AnimationSequence                               0.00                   0.00             0          0.81
+LogCookStats: Display: Audio                                           0.00                   0.00             0          1.48
+LogCookStats: Display: GeometryCollection                              0.00                   0.00             1          0.00
+LogCookStats: Display: NiagaraScript                                   0.00                   0.00             0          0.72
+LogCookStats: Display: BulkDataPayloadId                               0.00                   0.00             0          0.01
+LogCookStats: Display: BodySetup                                       0.00                   0.00             0         21.37
+LogCookStats: Display: SkeletalMesh                                    0.00                   0.00             0         23.41
+LogCookStats: Display: CKERSM                                          0.00                   0.00             0          0.39
+LogPackageBuildDependencyTracker: Display: Package Accesses (922 referencing packages with a total of 12659 unique accesses)
+LogConfigBuildDependencyTracker: Display: Config Accesses (1113 referencing packages with a total of 7211 unique accesses). 3001 unique accesses that were not associated with a package.
+LogCook: Display: Done!
+LogSavePackage: Display: Took 0.012396s to verify the EDL loading graph.
+LogInit: Display:
+LogInit: Display: Warning/Error Summary (Unique only)
+LogInit: Display: -----------------------------------
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Normal.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Roughness.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Height.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Metallic.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_BaseColor.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_AO.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Screen_Emissive.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Roughness.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Height.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Normal.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Metallic.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_Emissive.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/StaticMesh/SM_Med_Ticket_Machine.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_BaseColor.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Textures/T_Med_Ticket_Machine_AO.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Materials/M_Med_Ticket_Machine.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Materials/M_Med_Ticket_Machine_Screen.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Maps/Showcase_Map.umap. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogAssetRegistry: Warning: Package is unloadable: D:/UnrealEngine/Projects/Squeak/Content/Med_Ticket_Machine/Maps/Showcase_Map_BuiltData.uasset. Reason: Version is too old. Min Version: 214, Package Version: 0.
+LogInit: Display: LogConfig: Warning: GConfig::Find attempting to access config with non-normalized path ../../../../Projects/Squeak/Config/DefaultEngine.ini. Please use FConfigCacheIni::NormalizeConfigIniPath (which would make generate D:/UnrealEngine/Projects/Squeak/Config/DefaultEngine.ini) before accessing INI files through ConfigCache.
+LogInit: Display: LogTemp: Warning: Constructor: Registry query for SIK_STEAM_USERNAME failed with error: 2
+LogInit: Display: LogTemp: Warning: Constructor: Registry query for SIK_STEAM_PASSWORD failed with error: 2
+LogInit: Display: LogTemp: Warning: PostInitProperties: SIK_STEAM_USERNAME environment variable is empty
+LogInit: Display: LogTemp: Warning: PostInitProperties: SIK_STEAM_PASSWORD environment variable is empty
+LogInit: Display: LogGameplayTags: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_0\base\status_effects\structure\F_ModifierHandle.uasset: Invalid GameplayTag False found in property /Game/content_0/base/status_effects/structure/F_Modifier.F_Modifier:TargetStatTag_17_21E2C7D242419E06798571B32D85E2A4.
+LogInit: Display: LogGameplayTags: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_0\base\status_effects\structure\F_ModifierHandle.uasset: Invalid GameplayTag False found in object UserDefinedStruct /Game/content_0/base/status_effects/structure/F_ModifierHandle.F_ModifierHandle.
+LogInit: Display: LogGameplayTags: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_0\base\status_effects\BP_ModifierManagerComponent.uasset: Invalid GameplayTag False found in object K2Node_MakeStruct /Game/content_0/base/status_effects/BP_ModifierManagerComponent.BP_ModifierManagerComponent:AddModifier.K2Node_MakeStruct_1.
+LogInit: Display: LogBlueprint: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_1\scripts\animations\AnimBP_Ward_Laraine.uasset: [Compiler] Node  Blendspace Player 'AnimBS_Reaction_Laraine'  uses potentially thread-unsafe call  Get AIController . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+LogInit: Display: LogBlueprint: Warning: [AssetLog] D:\UnrealEngine\Projects\Squeak\Content\content_1\scripts\animations\AnimBP_Ward_Laraine.uasset: [Compiler] Node  Blendspace Player 'AnimBS_Reaction_Laraine'  uses potentially thread-unsafe call  Get Blackboard . Disable threaded update or use a thread-safe call. Function may need BlueprintThreadSafe metadata adding.
+LogInit: Display: LogConsoleManager: Warning: Performance warning: Many (31) failed FindConsoleObject() for 'r.PathTracing.HeterogeneousVolumes'.
+LogInit: Display: LogConsoleManager: Warning: Performance warning: Many (31) failed FindConsoleObject() for 'r.HeterogeneousVolumes.FrustrumGrid.MaxBottomLevelMemoryInMegabytes'.
+LogInit: Display: LogConsoleManager: Warning: Performance warning: Many (31) failed FindConsoleObject() for 'r.HeterogeneousVolumes.FrustrumGrid.ShadingRate'.
+LogInit: Display: LogScript: Warning: const_room21: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_0
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogInit: Display: LogScript: Warning: Script call stack:
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:UserConstructionScript
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room
+
+LogInit: Display: LogScript: Warning: Script Msg: Attempted to set an invalid index on array Tags [0/0]!
+LogInit: Display: LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_0
+LogInit: Display: LogScript: Warning: const_room: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_1
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogInit: Display: LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_1
+LogInit: Display: LogScript: Warning: const_room10: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_10
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogInit: Display: LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_10
+LogInit: Display: LogScript: Warning: const_room11: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_11
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogInit: Display: LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_11
+LogInit: Display: LogScript: Warning: const_room12: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_12
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogInit: Display: LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_12
+LogInit: Display: LogScript: Warning: const_room15: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_15
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogInit: Display: LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_15
+LogInit: Display: LogScript: Warning: const_room18: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_18
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogInit: Display: LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_18
+LogInit: Display: LogScript: Warning: const_room19: No Room Key Assigned
+
+	const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_19
+
+	Function /Game/content_1/scripts/systems/constructionSystem/scripts/const_room.const_room_C:Recalc Room:22D1
+LogInit: Display: LogScript: Warning: Script Msg called by: const_room_C /Game/content_0/level/Level_2.Level_2:PersistentLevel.const_room_C_19
+LogInit: Display: NOTE: Only first 50 warnings displayed.
+LogInit: Display:
+LogInit: Display: Success - 0 error(s), 479 warning(s)
+LogInit: Display:
+
+Execution of commandlet took:  43.70 seconds
+LogOnline: Display: STEAM: OnlineSubsystemSteam::Shutdown()
+LogShaderCompilers: Display: Shaders left to compile 0
+Took 53,20s to run UnrealEditor-Cmd.exe, ExitCode=0
+Cook command time: 53.21 s
+********** COOK COMMAND COMPLETED **********
+********** STAGE COMMAND STARTED **********
+Creating Staging Manifest...
+Patching bootstrap executable; D:\UnrealEngine\Projects\Squeak\Intermediate\Staging\Squeak.exe
+Begin update resource 'D:\UnrealEngine\Projects\Squeak\Intermediate\Staging\Squeak.exe' (0)
+Add resource 101, length 104 (True)
+Add resource 1, length 1996 (True)
+Add resource 2, length 2447 (True)
+Add resource 3, length 2535 (True)
+Add resource 4, length 3037 (True)
+Add resource 5, length 3244 (True)
+Add resource 6, length 3531 (True)
+Add resource 7, length 6931 (True)
+Add resource 201, length 96 (True)
+Add resource 202, length 14 (True)
+End update resource (True/0)
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\Base.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseCompat.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseDeviceProfiles.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseEditor.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseEditorKeyBindings.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseEditorPerProjectUserSettings.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseEditorSettings.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseEngine.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseGame.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseGameUserSettings.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseHardware.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseInput.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseInstallBundle.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseLightmass.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseMaterialExpressions.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\BasePakFileRules.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseRuntimeOptions.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseScalability.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\BaseSourceControlSettings.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\ConfigRedirects.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\ConsoleVariables.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\PluginBase.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\Layouts\DefaultLayout.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\Layouts\UE4ClassicLayout.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\Category.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\Editor.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\EditorTutorials.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\Engine.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\Keywords.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\PortableObjectExport.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\PortableObjectImport.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\PropertyNames.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\RepairData.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\ToolTips.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Localization\WordCount.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\VulkanPC\DataDrivenPlatformInfo.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\Windows\BaseWindowsEngine.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\Windows\BaseWindowsInput.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\Windows\DataDrivenPlatformInfo.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Windows\WindowsEditorPerProjectUserSettings.ini
+Excluding config file D:\UnrealEngine\UE_5.6\Engine\Config\Windows\WindowsEditorSettings.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\Windows\WindowsGame.ini
+Including config file D:\UnrealEngine\UE_5.6\Engine\Config\Windows\WindowsInput.ini
+Excluding config file D:\UnrealEngine\Projects\Squeak\Config\DefaultEditor.ini
+Including config file D:\UnrealEngine\Projects\Squeak\Config\DefaultEngine.ini
+Including config file D:\UnrealEngine\Projects\Squeak\Config\DefaultGame.ini
+Including config file D:\UnrealEngine\Projects\Squeak\Config\DefaultGameplayTags.ini
+Including config file D:\UnrealEngine\Projects\Squeak\Config\DefaultInput.ini
+The config file 'Squeak/Config/UserEngine.ini' will be staged, but is not explicitly allowed or denied. Add +AllowedConfigFiles=Squeak/Config/UserEngine.ini or +DisallowedConfigFiles=Squeak/Config/UserEngine.ini to the [Staging] section of DefaultGame.ini
+Including config file D:\UnrealEngine\Projects\Squeak\Config\UserEngine.ini
+The config file 'Squeak/Config/Tags/foamside.ini' will be staged, but is not explicitly allowed or denied. Add +AllowedConfigFiles=Squeak/Config/Tags/foamside.ini or +DisallowedConfigFiles=Squeak/Config/Tags/foamside.ini to the [Staging] section of DefaultGame.ini
+Including config file D:\UnrealEngine\Projects\Squeak\Config\Tags\foamside.ini
+Cleaning Stage Directory: D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows
+DumpManifest: C:\Users\Feyokon\AppData\Roaming\Unreal Engine\AutomationTool\Logs\D+UnrealEngine+UE_5.6\FinalCopyWin64_UFSFiles.txt, NumItems: 5526
+DumpManifest: C:\Users\Feyokon\AppData\Roaming\Unreal Engine\AutomationTool\Logs\D+UnrealEngine+UE_5.6\FinalCopyWin64_NonUFSFiles.txt, NumItems: 27
+DumpManifest: C:\Users\Feyokon\AppData\Roaming\Unreal Engine\AutomationTool\Logs\D+UnrealEngine+UE_5.6\FinalCopyWin64_NonUFSFilesDebug.txt, NumItems: 3
+Copying NonUFSFiles to staging directory: D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll, deleting, waiting 10s and retrying.
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll, deleting, waiting 10s and retrying.
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll, deleting, waiting 10s and retrying.
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll, deleting, waiting 10s and retrying.
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll, deleting, waiting 10s and retrying.
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll, deleting, waiting 10s and retrying.
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll, deleting, waiting 10s and retrying.
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll, deleting, waiting 10s and retrying.
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll, deleting, waiting 10s and retrying.
+Skip copying file D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll because it doesn't exist.
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll
+Failed to copy D:\UnrealEngine\Projects\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll to D:\UnrealEngine\Projects\Squeak\Saved\StagedBuilds\Windows\Squeak\Plugins\StreamlineCore\Binaries\ThirdParty\Win64\nvngx_deepdvc.dll
+(see C:\Users\Feyokon\AppData\Roaming\Unreal Engine\AutomationTool\Logs\D+UnrealEngine+UE_5.6\Log.txt for full exception trace)
+AutomationTool executed for 0h 3m 12s
+AutomationTool exiting with ExitCode=1 (Error_Unknown)
+BUILD FAILED
+
