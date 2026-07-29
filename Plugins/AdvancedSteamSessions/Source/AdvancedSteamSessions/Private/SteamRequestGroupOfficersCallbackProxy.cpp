@@ -5,7 +5,7 @@
 #include "AdvancedSteamFriendsLibrary.h"
 #include "OnlineSubSystemHeader.h"
 #if (PLATFORM_WINDOWS || PLATFORM_MAC || PLATFORM_LINUX) && STEAM_SDK_INSTALLED
-#include "isteamfriends.h"
+#include "steam/isteamfriends.h"
 #endif
 //#include "OnlineSubsystemSteamTypes.h"
 

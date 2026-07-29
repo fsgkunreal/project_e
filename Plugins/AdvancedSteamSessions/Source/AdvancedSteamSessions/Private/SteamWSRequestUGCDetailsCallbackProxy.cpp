@@ -3,7 +3,7 @@
 #include "SteamWSRequestUGCDetailsCallbackProxy.h"
 #include "OnlineSubSystemHeader.h"
 #if (PLATFORM_WINDOWS || PLATFORM_MAC || PLATFORM_LINUX) && STEAM_SDK_INSTALLED
-#include "isteamugc.h"
+#include "steam/isteamugc.h"
 #endif
 
 //////////////////////////////////////////////////////////////////////////
