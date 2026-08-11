@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.6",
+	"EngineAssociation": "{DF4CAF5B-4709-468A-ADD6-D4A70E9A5623}",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
@@ -111,6 +111,11 @@
 		{
 			"Name": "MotionTrajectory",
 			"Enabled": true
+		},
+		{
+			"Name": "SteamIntegrationKit",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/122c9894af2649c8a9c2a25452562547"
 		}
 	]
 }
